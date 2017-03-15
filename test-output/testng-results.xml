@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32116" started-at="2017-03-15T15:18:08Z" finished-at="2017-03-15T15:18:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32116" started-at="2017-03-15T15:18:08Z" finished-at="2017-03-15T15:18:40Z">
+      <class name="com.healthec.provider.test.functional.TestdashboardUC_001">
+        <test-method status="PASS" signature="beforedashboardTC()[pri:0, instance:com.healthec.provider.test.functional.TestdashboardUC_001@5442a311]" name="beforedashboardTC" is-config="true" duration-ms="24579" started-at="2017-03-15T20:48:08Z" finished-at="2017-03-15T20:48:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforedashboardTC -->
+        <test-method status="PASS" signature="testDashboardTC_001()[pri:0, instance:com.healthec.provider.test.functional.TestdashboardUC_001@5442a311]" name="testDashboardTC_001" duration-ms="7529" started-at="2017-03-15T20:48:33Z" finished-at="2017-03-15T20:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDashboardTC_001 -->
+      </class> <!-- com.healthec.provider.test.functional.TestdashboardUC_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
