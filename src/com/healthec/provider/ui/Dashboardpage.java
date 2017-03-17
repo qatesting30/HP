@@ -59,5 +59,43 @@ public class Dashboardpage {
 			return driver.findElement(ios.searchTextbox);*/
 		return null;
    }
-  
+   public WebElement admissionsOrEDvisit(){
+	   if(instanceName.contains("AndroidDriver"))
+		   return driver.findElement(aos.admissionsOrEDvisits);
+		
+		/*else if(instanceName.contains("IOSDriver"))
+			return driver.findElement(ios.searchTextbox);*/
+		return null;
+   }
+   public WebElement discharged(){
+	   if(instanceName.contains("AndroidDriver"))
+		   return driver.findElement(aos.discharged);
+		
+		/*else if(instanceName.contains("IOSDriver"))
+			return driver.findElement(ios.searchTextbox);*/
+		return null;
+		}
+   public WebElement documents(){
+	   if(instanceName.contains("AndroidDriver"))
+		   return driver.findElement(aos.documents);
+		
+		/*else if(instanceName.contains("IOSDriver"))
+			return driver.findElement(ios.searchTextbox);*/
+		return null;
+   }
+   public WebElement labReports(){
+	   if(instanceName.contains("AndroidDriver"))
+		   return driver.findElement(aos.labReports);
+		
+		/*else if(instanceName.contains("IOSDriver"))
+			return driver.findElement(ios.searchTextbox);*/
+		return null;
+   }
+   public WebElement backbutton(){
+	   if(instanceName.contains("AndroidDriver"))
+		   return driver.findElement(aos.backbtn);
+	   /*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+   }
 }
