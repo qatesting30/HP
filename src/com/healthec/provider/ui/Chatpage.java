@@ -51,4 +51,11 @@ public class Chatpage {
 		return driver.findElement(ios.searchTextbox);*/
 	return null;
 	}
+	public WebElement webView(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.WebView);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
 }

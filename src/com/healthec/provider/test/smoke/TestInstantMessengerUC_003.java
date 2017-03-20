@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.internal.thread.TestNGThread;
 
+import com.healthec.provider.projectspec.GetContext;
 import com.healthec.provider.ui.Chatpage;
 
 public class TestInstantMessengerUC_003 {
@@ -32,10 +33,13 @@ public class TestInstantMessengerUC_003 {
 		wait = (WebDriverWait)new WebDriverWait(driver, 30);
 		TestNGThread.sleep(5000);
 		System.out.println("provider name :"+driver.findElement(By.xpath("//android.view.View[contains(@content-desc,'Dr.Albert')]")).getAttribute("name"));
-	//	wait.until(ExpectedConditions.elementToBeClickable(cp.chatIcon())).click();
-		driver.findElement(By.xpath("//android.widget.Image[@content-desc='im-app-icon']")).click();
+		wait.until(ExpectedConditions.visibilityOf(cp.webView()));
+		System.out.println("WEBVIEW displayed");
+	    GetContext.switchToContext(driver, "WEBVIEW");
+	    wait.until(ExpectedConditions.elementToBeClickable(cp.chatIcon())).click();
+	    
 	}
-   @Test
+  // @Test
    public static void IMTC_002() throws Exception{
 	   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		wait = (WebDriverWait)new WebDriverWait(driver, 30);
