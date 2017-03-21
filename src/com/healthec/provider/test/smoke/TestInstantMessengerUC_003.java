@@ -27,7 +27,7 @@ public class TestInstantMessengerUC_003 {
 		cp=new Chatpage(driver);
 		}
 	
-	@Test
+	@Test(priority=1)
 	public static void IMTC_001() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		wait = (WebDriverWait)new WebDriverWait(driver, 30);
@@ -35,11 +35,22 @@ public class TestInstantMessengerUC_003 {
 		System.out.println("provider name :"+driver.findElement(By.xpath("//android.view.View[contains(@content-desc,'Dr.Albert')]")).getAttribute("name"));
 		wait.until(ExpectedConditions.visibilityOf(cp.webView()));
 		System.out.println("WEBVIEW displayed");
-	    GetContext.switchToContext(driver, "WEBVIEW");
+		GetContext.switchToContext(driver, "WEBVIEW");
 	    wait.until(ExpectedConditions.elementToBeClickable(cp.chatIcon())).click();
+	    GetContext.switchToContext(driver, "NATIVE_APP");
+	    try{
+	    	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	    	if(wait.until(ExpectedConditions.elementToBeClickable(cp.permissionsAccept())).isDisplayed()){
+	    		wait.until(ExpectedConditions.elementToBeClickable(cp.permissionsAccept())).click();
+	    		wait.until(ExpectedConditions.elementToBeClickable(cp.permissionsAccept())).click();
+	    	}
+	    }
+	    catch(Exception e){
+	    	System.out.println("No permnissions required");
+	    }
 	    
 	}
-  // @Test
+   @Test(priority=2)
    public static void IMTC_002() throws Exception{
 	   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		wait = (WebDriverWait)new WebDriverWait(driver, 30);

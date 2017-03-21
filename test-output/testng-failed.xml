@@ -6,6 +6,7 @@
       <class name="com.healthec.provider.test.smoke.TestInstantMessengerUC_003">
         <methods>
           <include name="beforeImtest"/>
+          <include name="IMTC_002"/>
           <include name="IMTC_001"/>
         </methods>
       </class> <!-- com.healthec.provider.test.smoke.TestInstantMessengerUC_003 -->

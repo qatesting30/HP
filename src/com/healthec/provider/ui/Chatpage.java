@@ -58,4 +58,18 @@ public class Chatpage {
 		return driver.findElement(ios.searchTextbox);*/
 	return null;
 	}
+	public WebElement permissionsAccept(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.permissionsAccept);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
+	public WebElement permissionsDeny(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.permissionsDeny);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
 }

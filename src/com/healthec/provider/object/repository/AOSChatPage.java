@@ -11,4 +11,6 @@ public class AOSChatPage {
 	public By searchCancelBtn = By.xpath("//android.widget.EditText[@index='0']/following-sibling::android.view.View[@index='1']");
 	public By userFilter = By.xpath("//android.view.View[@content-desc='chat?parm=xhePCRWMUskoWzDVJlYgVQ==#']");
     public By WebView  = By.className("android.webkit.WebView");
+    public By permissionsAccept = By.id("com.android.packageinstaller:id/permission_allow_button");
+    public By permissionsDeny = By.id("com.android.packageinstaller:id/permission_deny_button");
 }
