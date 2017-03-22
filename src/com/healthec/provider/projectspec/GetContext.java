@@ -21,6 +21,7 @@ public static void switchToContext(RemoteWebDriver driver,String contextinstance
 		  Set<String>availContexts = driver1.getContextHandles();
 		  System.out.println("available contexts :"+availContexts);
 		  for(String context : availContexts){
+			 // System.out.println("context :"+availContexts);
 			  if(context.contains(contextinstance)){
 				  driver1.context(contextinstance);
 				  

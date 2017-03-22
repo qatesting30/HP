@@ -1,21 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35834" started-at="2017-03-20T07:45:46Z" finished-at="2017-03-20T07:46:22Z">
+  <suite name="Default suite" duration-ms="64040" started-at="2017-03-21T15:12:19Z" finished-at="2017-03-21T15:13:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35834" started-at="2017-03-20T07:45:46Z" finished-at="2017-03-20T07:46:22Z">
-      <class name="com.healthec.provider.test.smoke.TestInstantMessengerUC_003">
-        <test-method status="PASS" signature="beforeImtest()[pri:0, instance:com.healthec.provider.test.smoke.TestInstantMessengerUC_003@57fffcd7]" name="beforeImtest" is-config="true" duration-ms="24073" started-at="2017-03-20T13:15:46Z" finished-at="2017-03-20T13:16:10Z">
+    <test name="Default test" duration-ms="64040" started-at="2017-03-21T15:12:19Z" finished-at="2017-03-21T15:13:23Z">
+      <class name="com.healthec.provider.test.smoke.TestMenuUC_004">
+        <test-method status="PASS" signature="beforeTestMenu()[pri:0, instance:com.healthec.provider.test.smoke.TestMenuUC_004@57fffcd7]" name="beforeTestMenu" is-config="true" duration-ms="21568" started-at="2017-03-21T20:42:19Z" finished-at="2017-03-21T20:42:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeImtest -->
-        <test-method status="PASS" signature="IMTC_001()[pri:0, instance:com.healthec.provider.test.smoke.TestInstantMessengerUC_003@57fffcd7]" name="IMTC_001" duration-ms="11750" started-at="2017-03-20T13:16:10Z" finished-at="2017-03-20T13:16:22Z">
+        </test-method> <!-- beforeTestMenu -->
+        <test-method status="PASS" signature="testMenuTC_001()[pri:1, instance:com.healthec.provider.test.smoke.TestMenuUC_004@57fffcd7]" name="testMenuTC_001" duration-ms="11798" started-at="2017-03-21T20:42:40Z" finished-at="2017-03-21T20:42:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- IMTC_001 -->
-      </class> <!-- com.healthec.provider.test.smoke.TestInstantMessengerUC_003 -->
+        </test-method> <!-- testMenuTC_001 -->
+        <test-method status="FAIL" signature="testMenuTC_002()[pri:2, instance:com.healthec.provider.test.smoke.TestMenuUC_004@57fffcd7]" name="testMenuTC_002" duration-ms="30656" started-at="2017-03-21T20:42:52Z" finished-at="2017-03-21T20:43:23Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[AndroidDriver: Android on LINUX (8b0cf630-1c2f-4dd9-82e9-0603635d0566)] -> id: landingpage] (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DT-AKASH', ip: '192.168.15.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.healthec.providereconnect.provider.demo, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.104:5555, platform=LINUX, appActivity=com.healthec.providereconnect.provider.demo.ProviderWebViewActivity, desired={appPackage=com.healthec.providereconnect.provider.demo, appActivity=com.healthec.providereconnect.provider.demo.ProviderWebViewActivity, platformVersion=6.0.0, platformName=Android, deviceName=Real Device}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 8b0cf630-1c2f-4dd9-82e9-0603635d0566]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[AndroidDriver: Android on LINUX (8b0cf630-1c2f-4dd9-82e9-0603635d0566)] -> id: landingpage] (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DT-AKASH', ip: '192.168.15.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.healthec.providereconnect.provider.demo, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.104:5555, platform=LINUX, appActivity=com.healthec.providereconnect.provider.demo.ProviderWebViewActivity, desired={appPackage=com.healthec.providereconnect.provider.demo, appActivity=com.healthec.providereconnect.provider.demo.ProviderWebViewActivity, platformVersion=6.0.0, platformName=Android, deviceName=Real Device}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 8b0cf630-1c2f-4dd9-82e9-0603635d0566
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
+	at com.healthec.provider.test.smoke.TestMenuUC_004.testMenuTC_002(TestMenuUC_004.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMenuTC_002 -->
+      </class> <!-- com.healthec.provider.test.smoke.TestMenuUC_004 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

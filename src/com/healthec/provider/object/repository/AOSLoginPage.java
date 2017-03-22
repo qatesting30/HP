@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class AOSLoginPage {
 	
-	public By userNameTxtfld = By.name("User Name");
+	public By userNameTxtfld = By.xpath("(//android.widget.EditText)[1]");
 	public By pwdTxtfld = By.xpath("(//android.widget.EditText)[2]");
 	public By loginBtn= By.name("Log In");
 	public By contactUslink= By.name("Contact us");

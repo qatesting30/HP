@@ -58,4 +58,46 @@ public class Chatpage {
 		return driver.findElement(ios.searchTextbox);*/
 	return null;
 	}
+	public WebElement permissionsAccept(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.permissionsAccept);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
+	public WebElement permissionsDeny(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.permissionsDeny);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
+	public WebElement chatsFilter(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.chatsFilter);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
+	public WebElement providerFilter(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.chatsFilter);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
+	public WebElement cmFilter(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.chatsFilter);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
+	public WebElement patientFilter(){
+		if(instanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.chatsFilter);
+		/*else if(instanceName.contains("IOSDriver"))
+		return driver.findElement(ios.searchTextbox);*/
+	return null;
+	}
 }
