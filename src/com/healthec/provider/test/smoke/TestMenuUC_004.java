@@ -1,10 +1,8 @@
 package com.healthec.provider.test.smoke;
 
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,14 +31,14 @@ public class TestMenuUC_004 {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    GetContext.switchToContext(driver, "WEBVIEW");
-	    tabs = = driver.findElements(By.className("m_navigationwrap"));
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
 	}
 	@Test(priority=2)
 	public static void testMenuTC_002(){
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
-	    wait.until(ExpectedConditions.visibilityOf(mt.homeTab())).click();
+	   // Tabs.menutabs(driver, mt.homeTab());
+	    
 	    
 	 }
 	//@Test(priority=3)

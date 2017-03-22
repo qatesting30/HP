@@ -17,8 +17,8 @@ public class Tabs {
 		
 		List<WebElement> menutabs =driver.findElements(By.className("m_navigationwrap"));
 		for(int i = 0; i < menutabs.size(); ++i) {
-			WebElement tabs = menutabs.get(i).findElement(aos.)
-		     tabs.click();
+			/*WebElement tabs = menutabs.get(i).findElement(aos.)
+		     tabs.click();*/
 		}
 	}
 }
