@@ -13,12 +13,12 @@ public class Tabs {
 	
 	AOSMenuTabs aos=new AOSMenuTabs();
 	
-	public static void menutabs(RemoteWebDriver driver,String element)throws Exception{
+	public static void menutabs(RemoteWebDriver driver,WebElement  element)throws Exception{
 		
 		List<WebElement> menutabs =driver.findElements(By.className("m_navigationwrap"));
 		for(int i = 0; i < menutabs.size(); ++i) {
-			//WebElement tabs = menutabs.get(i).findElement(aos.)
-		   //  tabs.click();
+			
+          // WebElement tab = menutabs.get(i).findElement(aos.)
 		}
 	}
 }
