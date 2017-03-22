@@ -90,7 +90,7 @@ public class TestMenuUC_004 {
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.logOutTab())).click();
 	    
-	    
+	    //changes
 	    
 	}
 	    
