@@ -55,10 +55,12 @@ public class TestInstantMessengerUC_003 {
 	   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		wait = (WebDriverWait)new WebDriverWait(driver, 30);
 		TestNGThread.sleep(5000);
+		GetContext.switchToContext(driver, "WEBVIEW");
 		wait.until(ExpectedConditions.elementToBeClickable(cp.searchBtn())).click();
 		wait.until(ExpectedConditions.elementToBeClickable(cp.searchBox())).sendKeys("automation");
 		wait.until(ExpectedConditions.elementToBeClickable(cp.searchcancelBtn())).click();
 		TestNGThread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(cp.userfilterOptions())).click();
+		wait.until(ExpectedConditions.elementToBeClickable(cp.chatsFilter())).click();
 		}
 }
