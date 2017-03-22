@@ -61,6 +61,6 @@ public class TestInstantMessengerUC_003 {
 		wait.until(ExpectedConditions.elementToBeClickable(cp.searchcancelBtn())).click();
 		TestNGThread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(cp.userfilterOptions())).click();
-		wait.until(ExpectedConditions.elementToBeClickable(cp.chatsFilter())).click();
+
 		}
 }

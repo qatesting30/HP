@@ -31,6 +31,7 @@ public class TestMenuUC_004 {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    GetContext.switchToContext(driver, "WEBVIEW");
+
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
 	}
 	@Test(priority=2)
