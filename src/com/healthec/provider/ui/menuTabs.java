@@ -22,51 +22,51 @@ public class menuTabs {
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement homeTab(){
+	public String homeTab(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.landingPageTab);
+			return (aos.landingPageTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement patientListTab(){
+	public String myPatientList(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.patientListTab);
+			return (aos.patientListTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement settingsTab(){
+	public String settings(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.settingsTab);
+			return (aos.settingsTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement calculatorTab(){
+	public String calculator(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.calculatorTab);
+			return (aos.calculatorTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement helpTab(){
+	public String help(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.helpTab);
+			return (aos.helpTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement contactUsTab(){
+	public String contactUs(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.contactTab);
+			return (aos.contactTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
 	}
-	public WebElement logOutTab(){
+	public String logOut(){
 		if(instanceName.contains("AndroidDriver"))
-			return driver.findElement(aos.logOutTab);
+			return (aos.logOutTab);
 		/*else if (instanceName.contains("IOSDriver"))
 			return driver.findElement(ios.menutabs);*/
 		return null;
