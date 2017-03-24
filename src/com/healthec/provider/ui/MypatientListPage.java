@@ -29,5 +29,12 @@ public class MypatientListPage {
 			return driver.findElement(aos.Firstname);*/
 		return null;
 	}
+	public WebElement searchBtn(){
+		if(InstanceName.contains("AndroidDriver"))
+			return driver.findElement(aos.searchbtn);
+		/*else if(InstanceName.contains("IOSDriver"))
+			return driver.findElement(aos.Firstname);*/
+		return null;
+	}
 
 }

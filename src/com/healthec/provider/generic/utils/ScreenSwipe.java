@@ -11,10 +11,10 @@ public class ScreenSwipe {
 	
 	 public static String instanceName; 
 	@SuppressWarnings("rawtypes")
-	public static void swipeScreen(RemoteWebDriver driver, String swipeType ){
+	public static void swipeHorizontal(RemoteWebDriver driver){
 		instanceName=driver.getClass().getName();
-		if(swipeType.equalsIgnoreCase("horizontal")){
-			if(instanceName.contains("AndroidDriver")){
+		System.out.println("instance :"+driver.getClass().getName());
+		if(instanceName.contains("AndroidDriver")){
 				AndroidDriver driver1=(AndroidDriver)driver;
 				Dimension sc= driver1.manage().window().getSize();
 				int ht = sc.getHeight();
@@ -29,8 +29,11 @@ public class ScreenSwipe {
 			else if (instanceName.contains("IOSDriver")){
 				System.out.println("Not yet implemented");
 			}
-		}
-		else if (swipeType.equalsIgnoreCase("vertical")){	
+	}
+		@SuppressWarnings("rawtypes")
+		public static void swipeVertical(RemoteWebDriver driver){
+			instanceName=driver.getClass().getName();
+			//System.out.println("instance :"+driver.getClass().getName());
 			if(instanceName.contains("AndroidDriver")){
 				AndroidDriver driver1=(AndroidDriver)driver;
 				Dimension sc= driver1.manage().window().getSize();
@@ -47,7 +50,6 @@ public class ScreenSwipe {
 				System.out.println("Not yet implemented");
 			}
 		}
-		}
-}
+	}
 
 

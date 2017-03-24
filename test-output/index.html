@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\akash.mahato\AppData\Local\Temp\testng-eclipse--365319062\testng-customsuite.xml</span>
+                    <span>C:\Users\akash.mahato\AppData\Local\Temp\testng-eclipse-1065786536\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.healthec.provider.test.smoke.TestMenuUC_004" hash-for-method="testMenuTC_002">testMenuTC_002</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.healthec.provider.test.smoke.TestMenuUC_004" hash-for-method="testMenuTC_001">testMenuTC_001</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.healthec.provider.test.functional.TestMyPatientListUC_003" hash-for-method="MyPatientListTestTC_001">MyPatientListTestTC_001</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,68 +117,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.healthec.provider.test.smoke.TestMenuUC_004</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMenuTC_002">
-                  </a> <!-- testMenuTC_002 -->
-                  <span class="method-name">testMenuTC_002</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[AndroidDriver: Android on LINUX (8b0cf630-1c2f-4dd9-82e9-0603635d0566)] -&gt; id: landingpage] (tried for 30 second(s) with 500 MILLISECONDS interval)
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;DT-AKASH&apos;, ip: &apos;192.168.15.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.healthec.providereconnect.provider.demo, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.104:5555, platform=LINUX, appActivity=com.healthec.providereconnect.provider.demo.ProviderWebViewActivity, desired={appPackage=com.healthec.providereconnect.provider.demo, appActivity=com.healthec.providereconnect.provider.demo.ProviderWebViewActivity, platformVersion=6.0.0, platformName=Android, deviceName=Real Device}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 8b0cf630-1c2f-4dd9-82e9-0603635d0566
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
-	at com.healthec.provider.test.smoke.TestMenuUC_004.testMenuTC_002(TestMenuUC_004.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.healthec.provider.test.smoke.TestMenuUC_004</span>
+              <span class="class-name">com.healthec.provider.test.functional.TestMyPatientListUC_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMenuTC_001">
-                  </a> <!-- testMenuTC_001 -->
-                  <span class="method-name">testMenuTC_001</span>
+                  <a name="MyPatientListTestTC_001">
+                  </a> <!-- MyPatientListTestTC_001 -->
+                  <span class="method-name">MyPatientListTestTC_001</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,7 +135,7 @@ Session ID: 8b0cf630-1c2f-4dd9-82e9-0603635d0566
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\akash.mahato\AppData\Local\Temp\testng-eclipse--365319062\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\akash.mahato\AppData\Local\Temp\testng-eclipse-1065786536\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -209,7 +144,7 @@ Session ID: 8b0cf630-1c2f-4dd9-82e9-0603635d0566
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.healthec.provider.test.smoke.TestMenuUC_004&quot;/&gt;
+      &lt;class name=&quot;com.healthec.provider.test.functional.TestMyPatientListUC_003&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -249,20 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMenuTC_002')
-data.setCell(0, 2, 'com.healthec.provider.test.smoke.TestMenuUC_004')
-data.setCell(0, 3, 30656);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testMenuTC_001')
-data.setCell(1, 2, 'com.healthec.provider.test.smoke.TestMenuUC_004')
-data.setCell(1, 3, 11798);
+data.setCell(0, 1, 'MyPatientListTestTC_001')
+data.setCell(0, 2, 'com.healthec.provider.test.functional.TestMyPatientListUC_003')
+data.setCell(0, 3, 45234);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -288,20 +219,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.healthec.provider.test.smoke.TestMenuUC_004</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.healthec.provider.test.functional.TestMyPatientListUC_003</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTestMenu</span>
+                <span class="method-name">BeforeMyPatientListTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testMenuTC_001</span>
-                <span class="method-start">21576 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testMenuTC_002</span>
-                <span class="method-start">33375 ms</span>
+                <span class="method-name">MyPatientListTestTC_001</span>
+                <span class="method-start">33525 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

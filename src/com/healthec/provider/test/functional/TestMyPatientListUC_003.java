@@ -41,8 +41,10 @@ public class TestMyPatientListUC_003 {
 		Tabs.menutabs(driver,mt.myPatientList());
 		wait.until(ExpectedConditions.elementToBeClickable(mp.Firstname())).sendKeys("FName");
 		wait.until(ExpectedConditions.elementToBeClickable(mp.lastName())).sendKeys("LName");
-		GetContext.switchToContext(driver, "NATIVE");
-		ScreenSwipe.swipeScreen(driver,sp.vertical());
+		GetContext.switchToContext(driver, "NATIVE_APP");
+		ScreenSwipe.swipeVertical(driver);
+		GetContext.switchToContext(driver, "WEBVIEW");
+		wait.until(ExpectedConditions.elementToBeClickable(mp.searchBtn())).click();
 		
 	}
 
