@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import org.testng.internal.thread.TestNGThread;
 
 import com.healthec.provider.projectspec.GetContext;
+import com.healthec.provider.test.functional.TestdashboardUC_002;
 import com.healthec.provider.ui.Chatpage;
 
 public class TestInstantMessengerUC_003 {

@@ -9,8 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+import com.healthec.provider.generic.utils.ScreenSwipe;
 import com.healthec.provider.projectspec.GetContext;
+import com.healthec.provider.projectspec.Tabs;
+import com.healthec.provider.test.functional.TestdashboardUC_002;
 import com.healthec.provider.ui.menuTabs;
 
 public class TestMenuUC_004 {
@@ -31,64 +33,69 @@ public class TestMenuUC_004 {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    GetContext.switchToContext(driver, "WEBVIEW");
-
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
+        wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
+        
 	}
-	@Test(priority=2)
-	public static void testMenuTC_002(){
+	//@Test(priority=2)
+	public static void testMenuTC_002() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
-	   // Tabs.menutabs(driver, mt.homeTab());
+	    Tabs.menutabs(driver, mt.homeTab());
+	  
 	    
 	    
 	 }
 	//@Test(priority=3)
-	public static void testMenuTC_003(){
+	public static void testMenuTC_003() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.patientListTab())).click();
+	    Tabs.menutabs(driver, mt.myPatientList());
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.backButton())).click();
 	    
 	}
 	//@Test(priority=4)
-	public static void testMenuTC_004(){
+	public static void testMenuTC_004() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.settingsTab())).click();
+	    Tabs.menutabs(driver, mt.settings());
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.backButton())).click();
 	}
 	//@Test(priority=5)
-	public static void testMenuTC_005(){
+	public static void testMenuTC_005() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.calculatorTab())).click();
+	    Tabs.menutabs(driver, mt.calculator());
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.backButton())).click();
 	}
 	//@Test(priority=6)
-	public static void testMenuTC_006(){
+	public static void testMenuTC_006() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.contactUsTab())).click();
+	    Tabs.menutabs(driver, mt.help());
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.backButton())).click();
 	}
 	//@Test(priority=7)
-	public static void testMenuTC_007(){
+	public static void testMenuTC_007() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.helpTab())).click();
+	    Tabs.menutabs(driver, mt.contactUs());
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.backButton())).click();
 	}
-	//@Test(priority=8)
-	public static void testMenuTC_008(){
+	@Test(priority=8)
+	public static void testMenuTC_008() throws Exception{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    wait=(WebDriverWait)new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.elementToBeClickable(mt.menuBtn())).click();
-	    wait.until(ExpectedConditions.elementToBeClickable(mt.logOutTab())).click();
+	  /*  GetContext.switchToContext(driver, "NATIVE");
+	    ScreenSwipe.swipeScreen(driver, mt.vertical());*/
+	    GetContext.switchToContext(driver, "WEBVIEW");
+	    Tabs.menutabs(driver, mt.logOut());
+	    
 	    
 	    //changes
 	    

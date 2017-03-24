@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.internal.thread.TestNGThread;
 
+import com.healthec.provider.test.smoke.TestLoginUC_001;
 import com.healthec.provider.ui.Dashboardpage;
 
 public class TestdashboardUC_002 {
