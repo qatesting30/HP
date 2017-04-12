@@ -13,7 +13,7 @@ public class AOSDashBoard {
 	public By discharged = By.xpath("//android.view.View[contains(@content-desc,'Patient(s) Discharged')]");
 	public By documents = By.xpath("//android.view.View[contains(@content-desc,'Documents')]");
 	public By labReports = By.xpath("//android.view.View[contains(@content-desc,'Patient(s) Received Lab Reports')]");
-	public By backbtn = By.name("back button");
+	public By backbtn =By.xpath("//android.view.View[@content-desc='back button']");
 	
 
 }

@@ -6,7 +6,7 @@ public class AOSLoginPage {
 	
 	public By userNameTxtfld = By.xpath("(//android.widget.EditText)[1]");
 	public By pwdTxtfld = By.xpath("(//android.widget.EditText)[2]");
-	public By loginBtn= By.name("Log In");
+	public By loginBtn= By.xpath("//android.widget.Button[@content-desc='Log In']");
 	public By contactUslink= By.name("Contact us");
 	public By privacyPolicylink= By.name("Privacy Policy");
 	public By termsOfUselink=By.name("Terms of use");
